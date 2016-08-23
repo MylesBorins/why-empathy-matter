@@ -1,0 +1,522 @@
+mixin emptyLink()
+  li(style='display:none;')
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title understanding human connection
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  style.
+    .hello {
+      background-image: url('images/hello-tharr.gif')
+    }
+    
+    .funemployed {
+      background-image: url('images/funemployed.gif')
+    }
+    
+    .krang {
+      background-image: url('images/krang.gif')
+    }
+    
+    .marco {
+      background-image: url('images/Marco-Iacoboni.jpg')
+    }
+    
+    .giacomo {
+      background-image: url('images/giacomo.jpg')
+    }
+    
+    .crybaby {
+      background-image: url('images/crybaby.jpg')
+    }
+    
+    .anecdote {
+      background-image: url('images/anecdote.jpg')
+    }
+    
+    .romantic {
+      background-image: url('images/romantic.jpg')
+    }
+    
+    .trippy-kitty {
+      background-image: url('images/trippy-kitty.gif')
+    }
+    
+    .trippy-kitty-too {
+      background-image: url('images/trippy-kitty-too.gif')
+    }
+    
+    .trippy-kitty-three {
+      background-image: url('images/trippy-kitty-three.gif')
+    }
+    
+    .trippy-kitty-fore {
+      background-image: url('images/trippy-kitty-fore.gif')
+    }
+    
+    .two {
+      background-image: url('images/two.png')
+    }
+    
+    .birth-and-death {
+      background-image: url('images/birth-and-death.jpg')
+    }
+    
+    .ouroboros {
+      background-image: url('images/ouroboros.jpg')
+    }
+    
+    .problem-child {
+      background-image: url('images/problem-child.gif')
+    }
+    
+    .christina {
+      background-image: url('images/christina.jpg')
+    }
+    
+    .mustache {
+      background-image: url('images/christina-me.jpg')
+    }
+    
+    .costume {
+      background-image: url('images/christina-me-too.jpg')
+    }
+
+    .hack-time {
+      background-image: url('images/hack-time.gif')
+    }
+    
+    .chaos {
+      background-image: url('images/chaos.gif')
+    }
+
+  body
+
+    article
+
+      section
+        h2 On left-pad and empathy:
+        h3 understanding human connection
+        h4 With your host Myles Borins
+        a(href='https://twitter.com/thealphanerd') @thealphanerd
+        h5 JSConf Iceland 2016
+
+      section
+        h2.strikethrough On left-pad and empathy
+        h2 On writing and consuming apis with empathy:
+        h3 Humaning is hard
+        h4 With your host Myles Borins
+        a(href='https://twitter.com/thealphanerd') @thealphanerd
+        h5 JSConf Iceland 2016
+
+      section(data-bespoke-backdrop='hello')
+        h1 Halló
+        
+      section
+        h1 My Name is Myles
+        img.headroom(src='images/me.jpg' alt='itsa me!' width='200px')
+      
+      section
+        h3 I currently work at a small disruptive startup called IBM
+        h4 contributing to Node.js
+        
+        img.headroom(src='images/ibm.jpg' alt='Eye Bee M by Paul Rand')
+        
+        h5 The opinions expressed in this talk are solely my own
+      
+      section
+        h2.bullet What qualifies me to talk about empathy?
+        ul
+          li.strikethrough I have an undergraduate degree in fine art
+          +emptyLink()
+          li.strikethrough I have a masters degree in music
+          +emptyLink()
+          li I am a human being
+      
+      section
+        h2.bullet What qualifies me to talk about left-pad?
+        ul
+          li.strikethrough I work full time on Node.js
+          +emptyLink()
+          li.strikethrough I noticed ecosystem breakage within 10 minutes
+          +emptyLink()
+          li.strikethrough I have an opinion
+          li Nothing in particular
+          
+      section
+        h3.bullet What are we talking about today?
+        ul.headroom
+          li A Brief Overview of "left-pad"
+          li A Definition of Empathy
+          li Empathy vs Sympathy
+          //- li The History of Empathy
+          li The Neuroscience of Empathy
+          li Learning Empathy
+          li Empathy as an API Developer
+      
+      section
+        h2 A brief overview
+        h2.bullet of "left-pad"
+        ul.headroom
+          li There was a disagreement between multiple parties
+          li A name-space was handed over to a copyright holder
+          li A module publisher unpublished all their modules
+      
+      section.emphatic-text(data-bespoke-backdrop='chaos')
+        h1 Chaos
+      
+      section
+        h2.bullet The Result?
+        ul.headroom
+          li the community grabbed open name-spaces to avoid bad actors
+          li the version of left-pad that broke everything was republished
+          li npm changed their unpublish policy to avoid this happening again
+          li the world kept spinning and hackers kept hacking
+      
+      section
+        h1 So why are we still talking about this?
+
+      section
+        h1 A Definition of Empathy
+      
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 SPOILER
+        h2.headroom The term empathy
+        h2 is barely 100 years old
+      
+      section
+        img.headroom(src="images/etymology.png" alt="the etymology of the word empathy" style='width:75%')
+        
+      section
+        h2 The Icelandic Word for Empathy
+        h2 is "samkennd"
+        h3 It roughly translates to "togetherness" or "solidarity"
+      
+      section
+        h3.bullet Theresa Wisman's Defining attributes of empathy
+        ul
+          li understand perspective
+          li stay out of judgment
+          li recognize what they are feeling
+          li communicate it back
+      
+      section
+        h1 Empathy is feeling with People
+      
+      section
+        h2 Theresa Wiseman
+        h3 "it is the ability to empathize which distinguishes an average nurse from an excellent nurse in the eyes of the patient"
+      
+      section
+        h2 Perhaps
+        h3 "it is the ability to empathize which distinguishes an average developer from an excellent developer in the eyes of others"
+      
+      section
+        h2 And Maybe...
+        h3 "it is the ability to empathize which distinguishes an average human from an excellent human in the eyes of the world"
+      
+      section(data-bespoke-backdrop='trippy-kitty')
+        h1 Trippy Kitty Break
+      
+      section
+        h1 Empathy vs Sympathy
+        h3 Brené Brown
+        video(width='320' height='240' controls)
+          source(src='images/Brown_Empathy_Short_Sm.mp4' type='video/mp4')
+
+      section
+        h3 Empathy is feeling with you
+        h3 Sympathy is feeling for you
+            
+      section
+        h1 Empathy is about being present with someone
+        
+      section
+        h1 Empathy is a choice
+        
+      section
+        h2 Rarely can a response make something better
+        h3 What makes something better is connection
+      
+      section(data-bespoke-backdrop='trippy-kitty-too')
+        h1 Trippy Kitty Break
+      
+      //- section
+        h1 The History of Empathy
+
+      //- section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 SPOILER
+        h2.headroom The term empathy is barely 100 years old
+
+      //- section(data-bespoke-backdrop='romantic')
+        h3 Romantic thinkers in the 18th century
+        h2 such as Herder and Novalis
+        h3 questioned their contemporary notion of Aesthetics
+
+      //- section
+        h2 Their main problem was that of expression.
+        h3 If art and nature are incapable of experiencing human feelings.
+        h4 How, then, can they express them?
+
+      //- section
+        h2 In 1872 Robert Vischer proposed an answer.
+        h3 The explanation must lie in some unconscious process
+        h3 of the person who views these forms.
+
+      //- section
+        h1 Einfühlung
+        h3 Feeling Into
+
+      //- section
+        h2 The idea was first elaborated by Vischer
+        h3 in "Das optische Formgefühl" (1872)
+        h4 Aesthetic pleasure may thus be explained as objectified self-enjoyment in which subject and object are fused
+        h4 Our ability to feel into art
+
+      //- section
+        h2 This was further explored by Theodor Lipps
+        h3 "The Ästhetik" (1903-06)
+        h4 He closely links our aesthetic perception and our perception of another embodied person as a minded creature.
+        h4 The nature of aesthetic empathy is always the “experience of another human”
+
+      //- section
+        h2 In 1909
+        h3 The term "Empathy" was introduced by psychologist
+        h2 Edward Itchener
+        h3 as a translation of the German term “Einfühlung”
+
+      //- section(data-bespoke-backdrop='trippy-kitty-three')
+        h1 Trippy Kitty Break
+      
+      section
+        h1 The Neuroscience of Empathy
+        
+      section
+        h3 Many of these ideas come from a fantastic talk by Jeremy Rifkin
+        h3 THE EMPATHIC CIVILIZATION
+        :verbatim
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/l7AWnfFRc7g" frameborder="0" allowfullscreen></iframe>
+      
+      section(data-bespoke-backdrop='krang')
+        h1 Healthy brains are wired for empathy
+      
+      section
+        h3 One such phenomenon is a mirror neuron
+        h4 the same neuron fires both when performing an action and when observing another doing the same action
+        a.no-underline(href='https://www.thersa.org/discover/videos/rsa-animate/2010/05/rsa-animate---the-empathic-civilisation/')
+          img(src='images/mirror.png' style='width:50%')
+      
+      section(data-bespoke-backdrop='giacomo')
+        h3 This was first discovered by Italian scientists in the 1990's
+        h4 Giacomo Rizzolatti, a neuroscientist at the University of Parma, noticed this strange phenomenon with a monkey and some peanuts.
+      
+      section(data-bespoke-backdrop='marco')
+        h2 Marco Iacoboni,
+        h4 Professor of Psychiatry and Biobehavioral Sciences, 
+        h3 argued that mirror neurons are the neural basis 
+        h2 of the human capacity for emotions such as empathy
+      
+      section(data-bespoke-backdrop='crybaby')
+        h2 When a baby cries in a nursery
+        h3 all the other babies join in
+        h4 This is called Empathic Distress
+        
+      section(data-bespoke-backdrop='two')
+        h2 Around two and a half years of age a child actually can begin to recognize themselves in the mirror
+        h3 This increase in selfhood goes hand in hand with an increase in empathic development
+        
+      section(data-bespoke-backdrop='birth-and-death')
+        h2 Around eight years of age a child learns about birth and death
+        h3 They learn about Vulnerability
+        
+      section
+        h2 Once you realize you have only one life, you can now feel others struggle
+        h3 You know that they have their own lives, you know their struggle
+      
+      section(data-bespoke-backdrop='ouroboros')
+        h3 Some philosophers, such as Schopenhauer, believe that empathic emotions such as compassion are possible because we are all parts of a greater ontological whole.
+        
+      section
+        h3 It is important to remember
+        h2 While our ability to FEEL empathy may be soft-wired
+        h3 Our ability to act on it is a learned trait
+
+      section(data-bespoke-backdrop='trippy-kitty-three')
+        h1 Trippy Kitty Break
+
+      section
+        h1 Learning Empathy
+
+      section
+        p
+          |  “Expressing care for another is not an innate ability present more naturally in some people than others, but rather a skill that can be taught and nurtured through a supportive educational environment”
+          |  
+          |  McLennan, D. M. P.
+
+      section(data-bespoke-backdrop='anecdote')
+        h3 It turns out empathy was something I had to learn
+      
+      section
+        h2 This is a younger me
+        img.headroom(src='images/young-me.jpg' alt='myles at 12 years old' style='height:50%')
+      
+      section(data-bespoke-backdrop='problem-child')
+        h2 I was not exactly a problem child
+      
+      section
+        h2 But I was never very observant
+        h3 I went through a good chunk of my life not having meaningful relationships
+        
+      section(data-bespoke-backdrop='christina')
+        h3 Then I met Christina
+
+      section(data-bespoke-backdrop='mustache')
+        h2 She is wired very differently than I am
+        h3 She patiently taught me how to be observant and how to feel with others
+        
+      section(data-bespoke-backdrop='costume')
+        h2 Sharing my life with someone has made me a better person
+        h3 It has made me a more empathetic person
+      
+      section
+        h3 It is important to remember
+        h2 While our ability to FEEL empathy may be soft-wired
+        h3 Our ability to act on it is a learned trait
+      
+      section
+        h1 Ask Yourself
+      
+      section
+        h1 Who am I?
+      
+      section
+        h1 Who is the "other"?
+      
+      section
+        h1 Other how?
+      
+      section
+        h1 How do we relate?
+      
+      section
+        h1 What do we share?
+      
+      section
+        h2 What do they need from me?
+        h3 and I from them?
+
+      section(data-bespoke-backdrop='trippy-kitty-fore')
+        h1 Trippy Kitty Break
+
+      section
+        h2 Empathy as a Developer:
+        h3 How does this have anything to do with Left-Pad?
+
+      section
+        h2.bullet Three places to focus as an API developer
+        ul.headroom
+          li Having empathy for the people you make things for
+          li Having empathy for those you make things with
+          li Having empathy for yourself
+
+      section
+        h2.bullet Having empathy for the people you make things for
+        ul.headroom
+          li Reliability
+          li Performance
+          li Platform Support
+          li Build for your consumer, not for yourself
+          li LISTEN TO THEM
+      
+      section
+        h2 Having empathy for those
+        h2.bullet you make things with
+        ul.headroom
+          li Documentation
+          li Testing
+          li On Boarding (First day / week / month)
+          li Be a good ally
+          li LISTEN TO THEM
+
+      section
+        h2 Having empathy
+        h2.bullet for yourself
+        ul.headroom
+          li Set healthy boundaries
+          li Listen to your body
+          li Be aware of impostor syndrome
+          li LISTEN TO YOURSELF
+
+      section(data-bespoke-backdrop='hack-time')
+        h1 Bringing it back
+      
+      section
+        h2.bullet While we may be soft-wired for empathy
+        h3.bullet The term has only existed for about 100 years
+      
+      section
+        h3.bullet Theresa Wisman's Defining attributes of empathy
+        ul
+          li understand perspective
+          li stay out of judgment
+          li recognize what they are feeling
+          li communicate it back
+      
+      section
+        h3 It is important to remember
+        h2 While our ability to FEEL empathy may be soft-wired
+        h3 Our ability to act on it is a learned trait
+      
+      section
+        h1.bullet Empathizing Requires you to be vulnerable
+        h3.bullet That can be scary
+      
+      section
+        h1 Empathy is a choice
+      
+      section
+        h3 ask not 
+        h2 “How am I unique?”
+        h3 but rather
+        h2 “How are we the same?”
+      
+      section
+        h1 Feel with people
+      
+      section
+        h2 Rarely can a response make something better.
+        h3 What makes something better is connection
+      
+      section
+        h1 Maybe what you say doesn't matter
+      
+      section
+        h2.bullet Maybe the only thing that matters in the end
+        h3.bullet Are the relationships you build
+
+      section
+        h2 Thank You
+        img.headroom(src='images/best-gif-evar.gif' alt='a surfing puppy' width='20%')
+        h3 Myles Borins
+        h4 @thealphanerd
+
+      section
+        h5 References
+        ul.no-bullets.references
+          li Wiseman, Theresa. "A concept analysis of empathy." Journal of advanced nursing 23.6 (1996): 1162-1167.
+          li Snow, Nancy E. "Empathy." American Philosophical Quarterly (2000): 65-78.
+          li https://www.thersa.org/discover/videos/rsa-shorts/2013/12/Brene-Brown-on-Empathy/
+          li https://www.thersa.org/discover/videos/rsa-animate/2010/05/rsa-animate---the-empathic-civilisation/
+          li https://www.thersa.org/discover/videos/rsa-animate/2012/12/rsa-animate---the-power-of-outrospection/
+          li https://www.thersa.org/discover/videos/event-videos/2013/07/the-power-of-vulnerability/
+          li http://www.teachthought.com/teaching/how-to-teach-empathy/
+          li http://www.nytimes.com/2006/01/10/science/10mirr.html?pagewanted=all
+          li Stueber, Karsten, "Empathy", The Stanford Encyclopedia of Philosophy (Winter 2014 Edition), Edward N. Zalta (ed.), URL = <http://plato.stanford.edu/archives/win2014/entries/empathy/>. 
+          li http://xtf.lib.virginia.edu/xtf/view?docId=DicHist/uvaGenText/tei/DicHist2.xml;chunk.id=dv2-09;toc.depth=1;toc.id=dv2-09;brand=default
+
+    script(src='build/build.js')
